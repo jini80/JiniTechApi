@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.AssemblyInfo.cs
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\source\repos\JiniTechApiSolution\JiniTechApp\obj\Debug\net9.0\JiniTechApp.MvcApplicationPartsAssemblyInfo.cache

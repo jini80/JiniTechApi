@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JiniTechApp.Views.ImagePage"
+             Title="Create Image">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Enter image description:"/>
+        <Editor x:Name="PromptEntry" AutoSize="TextChanges"/>
+        <Button Text="Generate Image" Clicked="OnGenerateImageClicked"/>
+        <Image x:Name="GeneratedImage" HeightRequest="300"/>
+    </VerticalStackLayout>
+</ContentPage>

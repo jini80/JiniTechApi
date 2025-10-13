@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JiniTechApp.Views.VideoPage"
+             Title="Create Video">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Enter video description:"/>
+        <Editor x:Name="PromptEntry" AutoSize="TextChanges"/>
+        <Button Text="Generate Video" Clicked="OnGenerateVideoClicked"/>
+        <Label x:Name="StatusLabel"/>
+    </VerticalStackLayout>
+</ContentPage>
