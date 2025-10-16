@@ -1,5 +1,6 @@
-# Build stage
+# Use official .NET 9.0 SDK image for building
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+
 WORKDIR /app
 
 # Copy solution and project files
@@ -9,15 +10,19 @@ COPY JiniTechApi/JiniTechApi.csproj ./JiniTechApi/
 # Restore dependencies
 RUN dotnet restore JiniTechApi/JiniTechApi.csproj
 
-# Copy everything else and build
-COPY . ./
+# Copy the rest of the source
+COPY . .
+
+# Publish the app
 RUN dotnet publish JiniTechApi/JiniTechApi.csproj -c Release -o out
 
-# Runtime stage
+# Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
-COPY --from=build /app/out ./
+COPY --from=build /app/out .
 
-EXPOSE 8080
-ENV ASPNETCORE_URLS=http://+:8080
+# Set the entry point
+ENV ASPNETCORE_URLS=http://+:5024
+EXPOSE 5024
+
 ENTRYPOINT ["dotnet", "JiniTechApi.dll"]
